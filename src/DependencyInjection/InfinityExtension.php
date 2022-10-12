@@ -7,8 +7,14 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 
 class InfinityExtension extends Extension
 {
-    public function load(array $configs, ContainerBuilder $container)
-    {
+    /**
+     * @param array<string, mixed> $configs
+     * @param ContainerBuilder $container
+     */
+    public function load(
+        array $configs,
+        ContainerBuilder $container
+    ): void {
         // TODO: Implement load() method.
     }
 }
