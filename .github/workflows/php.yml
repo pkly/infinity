@@ -24,7 +24,7 @@ jobs:
       - uses: php-actions/composer@v6
         with:
           php_version: 8.1
-          command: --no-interaction --no-scripts --no-progress --prefer-dist
+          command: --no-interaction --no-scripts --prefer-dist
 
   phpstan:
     runs-on: ubuntu-latest
