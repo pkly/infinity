@@ -62,7 +62,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-composer-
 
-      - name: PHP-CS-Fixer
+      - name: PHP Setup
         uses: shivammathur/setup-php@v2
+        with:
+          php_version: 8.1
+
+      - name: PHP-CS-Fixer
         run: |
           vendor/bin/php-cs-fixer fix --config ./.php-cs-fixer.dist.php --dry-run --diff --ansi
