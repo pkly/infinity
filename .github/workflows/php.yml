@@ -67,6 +67,11 @@ jobs:
         with:
           php_version: 8.1
 
+      - name: whatever
+        run: |
+          ls -la .
+          ls -la vendor/
+
       - name: PHP-CS-Fixer
         run: |
           vendor/bin/php-cs-fixer fix --config ./.php-cs-fixer.dist.php --dry-run --diff --ansi
