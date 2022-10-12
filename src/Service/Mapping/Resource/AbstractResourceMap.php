@@ -16,6 +16,9 @@ abstract class AbstractResourceMap implements ResourceMapInterface
      */
     private string $entityClass;
 
+    /**
+     * @param class-string<T> $entityClass
+     */
     public function __construct(
         string $entityClass
     ) {
