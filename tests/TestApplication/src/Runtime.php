@@ -2,7 +2,9 @@
 
 namespace Test\Infinity\TestApplication;
 
-class Runtime extends \Symfony\Component\Runtime\SymfonyRuntime
+use Symfony\Component\Runtime\SymfonyRuntime;
+
+class Runtime extends SymfonyRuntime
 {
     public function __construct(
         array $options = []
