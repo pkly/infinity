@@ -4,6 +4,7 @@ namespace Infinity\Traits\Mapping;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormTypeInterface;
+use Symfony\Component\HttpFoundation\ParameterBag;
 
 /**
  * This field contains the shared properties of mapped fields, so that they can be quickly implemented
@@ -18,6 +19,8 @@ trait FieldPropertyTrait
     protected string $formType = TextType::class;
 
     protected string $component = 'text';
+
+    protected ParameterBag $formOptions;
 
     public function isVirtual(): bool
     {
@@ -60,6 +63,23 @@ trait FieldPropertyTrait
         string $component
     ): static {
         $this->component = $component;
+
+        return $this;
+    }
+
+    public function getFormOptions(): ParameterBag
+    {
+        if (!isset($this->formOptions)) {
+            $this->formOptions = new ParameterBag();
+        }
+
+        return $this->formOptions;
+    }
+
+    public function setFormOptions(
+        ParameterBag $formOptions
+    ): static {
+        $this->formOptions = $formOptions;
 
         return $this;
     }

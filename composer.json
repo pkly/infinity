@@ -5,15 +5,15 @@
     "require": {
         "php": ">=8.1",
         "ext-json": "*",
-        "symfony/framework-bundle": "^5.4",
-        "symfony/dependency-injection": "^5.4",
-        "symfony/console": "^5.4",
-        "symfony/form": "^5.4",
+        "doctrine/doctrine-bundle": "^2.5",
         "symfony/cache": "^5.4",
         "symfony/config": "^5.4",
-        "symfony/twig-bundle": "^5.4",
+        "symfony/console": "^5.4",
+        "symfony/dependency-injection": "^5.4",
+        "symfony/form": "^5.4",
+        "symfony/framework-bundle": "^5.4",
         "symfony/security-bundle": "^5.4",
-        "doctrine/doctrine-bundle": "^2.5",
+        "symfony/twig-bundle": "^5.4",
         "symfony/validator": "5.4.*"
     },
     "require-dev": {
