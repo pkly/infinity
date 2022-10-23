@@ -40,7 +40,7 @@ class FieldMapTestCase extends TestCase
             sprintf(
                 'Class %s does not match expected virtual value %s',
                 static::FIELD_MAP_CLASS,
-                (int)static::EXPECTED_VIRTUAL
+                (int) static::EXPECTED_VIRTUAL
             )
         );
         $this->assertEquals(
@@ -56,6 +56,6 @@ class FieldMapTestCase extends TestCase
 
     protected function initializeFieldMap(): AbstractFieldMap
     {
-        return new static::FIELD_MAP_CLASS;
+        return (new \ReflectionClass(static::FIELD_MAP_CLASS))->newInstance();
     }
 }
