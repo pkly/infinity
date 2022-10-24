@@ -16,7 +16,7 @@ services:
 
   php_fpm:
     container_name: infinity_dev_php_fpm
-    image: php:8.1.1-fpm
+    build: ./php-fpm/
     depends_on:
       - database
     environment:
@@ -30,6 +30,7 @@ services:
   nginx:
     container_name: infinity_dev_nginx
     image: nginx:stable-alpine
+    working_dir: /var/www
     depends_on:
       - php_fpm
     volumes:

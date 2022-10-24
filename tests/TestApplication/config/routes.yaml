@@ -1,3 +1,7 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+bundle:
+  prefix: /infinity
+  resource: '@InfinityBundle/Resources/config/routes.yaml'
