@@ -23,6 +23,9 @@ services:
       - APP_ENV=${APP_ENV:-dev}
     volumes:
       - ../:/var/www
+      - ./php-fpm/ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./php-fpm/ini/opcache.ini:/usr/local/etc/php/conf.d/opcache.ini
+      - ./php-fpm/conf/php-fpm-custom.conf:/usr/local/etc/php-fpm.d/zz-php-fpm-custom.conf:ro
 
   nginx:
     container_name: infinity_dev_nginx
@@ -30,5 +33,9 @@ services:
       - php_fpm
     volumes:
       - ../:/var/www
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/sites:/etc/nginx/sites-available
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx
     ports:
       - "${NGINX_PORT:-80}:80"
