@@ -22,17 +22,18 @@ services:
     environment:
       - APP_ENV=${APP_ENV:-dev}
     volumes:
-      - ../:/var/www
+      - ../../../:/var/www
       - ./php-fpm/ini/custom.ini:/usr/local/etc/php/conf.d/custom.ini
       - ./php-fpm/ini/opcache.ini:/usr/local/etc/php/conf.d/opcache.ini
       - ./php-fpm/conf/php-fpm-custom.conf:/usr/local/etc/php-fpm.d/zz-php-fpm-custom.conf:ro
 
   nginx:
     container_name: infinity_dev_nginx
+    image: nginx:stable-alpine
     depends_on:
       - php_fpm
     volumes:
-      - ../:/var/www
+      - ../../../:/var/www
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/sites:/etc/nginx/sites-available
       - ./nginx/conf.d:/etc/nginx/conf.d

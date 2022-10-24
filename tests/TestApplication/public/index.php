@@ -2,6 +2,8 @@
 
 use Test\Infinity\TestApplication\Kernel;
 
+$_SERVER['APP_RUNTIME'] = \Test\Infinity\TestApplication\Runtime::class;
+
 require_once __DIR__.'/../../../vendor/autoload_runtime.php';
 
 return function (array $context) {
