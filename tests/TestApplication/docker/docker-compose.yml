@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-###> doctrine/doctrine-bundle ###
   database:
+    container_name: infinity_dev_postgres
     image: postgres:${POSTGRES_VERSION:-14}-alpine
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-app}
@@ -10,14 +10,25 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-!ChangeMe!}
       POSTGRES_USER: ${POSTGRES_USER:-app}
     volumes:
-      - db-data:/var/lib/postgresql/data:rw
+      - ./docker/db/data:/var/lib/postgresql/data:rw
     ports:
       - "5432"
-      # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./docker/db/data:/var/lib/postgresql/data:rw
-###< doctrine/doctrine-bundle ###
 
-volumes:
-###> doctrine/doctrine-bundle ###
-  db-data:
-###< doctrine/doctrine-bundle ###
+  php_fpm:
+    container_name: infinity_dev_php_fpm
+    image: php:8.1.1-fpm
+    depends_on:
+      - database
+    environment:
+      - APP_ENV=${APP_ENV:-dev}
+    volumes:
+      - ../:/var/www
+
+  nginx:
+    container_name: infinity_dev_nginx
+    depends_on:
+      - php_fpm
+    volumes:
+      - ../:/var/www
+    ports:
+      - "${NGINX_PORT:-80}:80"
