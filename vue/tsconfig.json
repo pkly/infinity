@@ -1,17 +1,13 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
+  "files": [
+    "shims.d.ts"
+  ],
   "include": [
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue"
   ],
-  "compilerOptions": {
-    "baseUrl": "./infinity",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-
   "references": [
     {
       "path": "./tsconfig.config.json"

@@ -54,6 +54,7 @@
         "symfony/twig-bridge": "^5.4",
         "symfony/web-link": "5.4.*",
         "symfony/web-profiler-bundle": "^5.4",
+        "symfony/webpack-encore-bundle": "^1.16",
         "symfony/yaml": "5.4.*",
         "twig/extra-bundle": "^2"
     },

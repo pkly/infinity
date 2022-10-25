@@ -6,6 +6,8 @@
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production --progress",
+    "dev": "vite",
+    "build": "run-p type-check build-only",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
@@ -31,8 +33,6 @@
     "prettier": "^2.7.1",
     "typescript": "~4.7.4",
     "vite": "^3.0.9",
-    "vue-tsc": "^0.40.7",
-    "vue-loader": "^17.0.0",
-    "ts-loader": "^9.0.0"
+    "vue-tsc": "^0.40.7"
   }
 }

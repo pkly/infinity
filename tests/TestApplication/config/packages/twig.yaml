@@ -1,5 +1,6 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    auto_reload: true
 
 when@test:
     twig:

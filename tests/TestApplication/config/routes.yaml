@@ -4,4 +4,4 @@
 
 bundle:
   prefix: /infinity
-  resource: '@InfinityBundle/Resources/config/routes.yaml'
+  resource: '@InfinityBundle/config/routes.yaml'

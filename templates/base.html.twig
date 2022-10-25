@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
@@ -12,8 +12,12 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+
+        <meta name="wtf" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            <div id="app"></div>
+        {% endblock %}
     </body>
 </html>
