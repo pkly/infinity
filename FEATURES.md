@@ -28,7 +28,7 @@ panel for Symfony.
   
 ### Apis
 
-- [ ] Login
+- [x] Login
 - [ ] Logout
 - [ ] Fetch dashboard
   - [ ] User information
@@ -40,11 +40,11 @@ panel for Symfony.
 
 ### Templates
 
-- [ ] Twig startup point for Vue
+- [x] Twig startup point for Vue
 
 ### Framework considerations
 
-- [ ] Hooking into security as seamlessly as possible
+- [x] Hooking into security as seamlessly as possible
 - [ ] Using symfony's permission system
 - [ ] Avoiding doubling framework code, unless it'd require unnecessary third-party bundles
 - [ ] Using subscribers for all internal events and logic
@@ -57,7 +57,7 @@ panel for Symfony.
 
 ### OPA
 
-- [ ] Startup point
-- [ ] Login logic
+- [x] Startup point
+- [x] Login logic
 - [ ] Logout logic
 - [ ] ???
