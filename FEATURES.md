@@ -29,7 +29,7 @@ panel for Symfony.
 ### Apis
 
 - [x] Login
-- [ ] Logout
+- [x] Logout
 - [ ] Fetch dashboard
   - [ ] User information
   - [ ] User notifications
@@ -59,5 +59,5 @@ panel for Symfony.
 
 - [x] Startup point
 - [x] Login logic
-- [ ] Logout logic
+- [x] Logout logic
 - [ ] ???

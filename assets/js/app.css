@@ -1,29 +1,9 @@
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Navigation/TopBar.vue?vue&type=style&index=0&id=c9cd930e&lang=scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-#logo {
-  width: 50px;
-}
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Navigation/SideMenu.vue?vue&type=style&index=0&id=26411a91&lang=scss ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-#side-menu {
-  width: 300px;
-}
-#side-menu.hidden {
-  width: 50px;
-}
-#side-menu.invisible {
-  width: 0;
-}
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/App.vue?vue&type=style&index=0&id=7ba5bd90&lang=scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 #vue-app {
   display: flex;
-}
-#vue-app #app-main {
-  flex-grow: 1;
+  min-height: 100vh;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFDQTtFQUNFO0FBQUYsQzs7OztBQ0RBO0VBQ0U7QUFBRjtBQUVFO0VBQ0U7QUFBSjtBQUdFO0VBQ0U7QUFESixDOzs7O0FDUEE7RUFDRTtBQUFGO0FBRUU7RUFDRTtBQUFKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9pbmZpbml0eS12dWUvLi9zcmMvY29tcG9uZW50cy9OYXZpZ2F0aW9uL1RvcEJhci52dWUiLCJ3ZWJwYWNrOi8vaW5maW5pdHktdnVlLy4vc3JjL2NvbXBvbmVudHMvTmF2aWdhdGlvbi9TaWRlTWVudS52dWUiLCJ3ZWJwYWNrOi8vaW5maW5pdHktdnVlLy4vc3JjL0FwcC52dWUiXSwic291cmNlc0NvbnRlbnQiOlsiXHJcbiNsb2dvIHtcclxuICB3aWR0aDogNTBweDtcclxufVxyXG4iLCJcclxuI3NpZGUtbWVudSB7XHJcbiAgd2lkdGg6IDMwMHB4O1xyXG5cclxuICAmLmhpZGRlbiB7XHJcbiAgICB3aWR0aDogNTBweDtcclxuICB9XHJcblxyXG4gICYuaW52aXNpYmxlIHtcclxuICAgIHdpZHRoOiAwO1xyXG4gIH1cclxufVxyXG4iLCJcbiN2dWUtYXBwIHtcbiAgZGlzcGxheTogZmxleDtcblxuICAjYXBwLW1haW4ge1xuICAgIGZsZXgtZ3JvdzogMTtcbiAgfVxufVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFDQTtFQUNFO0VBQ0E7QUFBRixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vaW5maW5pdHktdnVlLy4vc3JjL0FwcC52dWUiXSwic291cmNlc0NvbnRlbnQiOlsiXHJcbiN2dWUtYXBwIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xyXG59XHJcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

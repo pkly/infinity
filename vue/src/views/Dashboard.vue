@@ -1,6 +1,9 @@
-<template>
-  <h1>Welcome to the dashboard!</h1>
-</template>
-
 <script setup lang="ts">
+import MenuLayout from "../layout/MenuLayout.vue"
 </script>
+
+<template>
+  <MenuLayout>
+    <div>Contents here</div>
+  </MenuLayout>
+</template>

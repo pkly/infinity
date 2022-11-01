@@ -1,0 +1,26 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Navigation/TopBar.vue?vue&type=style&index=0&id=c9cd930e&lang=scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+#logo {
+  width: 50px;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Navigation/SideMenu.vue?vue&type=style&index=0&id=26411a91&lang=scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+#side-menu {
+  width: 300px;
+}
+#side-menu.hidden {
+  width: 50px;
+}
+#side-menu.invisible {
+  width: 0;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/layout/MenuLayout.vue?vue&type=style&index=0&id=5837dc05&lang=scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+#vue-app #app-main {
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3JjX3ZpZXdzX0Rhc2hib2FyZF92dWUuY3NzIiwibWFwcGluZ3MiOiI7OztBQUNBO0VBQ0U7QUFBRixDOzs7O0FDREE7RUFDRTtBQUFGO0FBRUU7RUFDRTtBQUFKO0FBR0U7RUFDRTtBQURKLEM7Ozs7QUNORTtFQUNFO0FBREosQyIsInNvdXJjZXMiOlsid2VicGFjazovL2luZmluaXR5LXZ1ZS8uL3NyYy9jb21wb25lbnRzL05hdmlnYXRpb24vVG9wQmFyLnZ1ZSIsIndlYnBhY2s6Ly9pbmZpbml0eS12dWUvLi9zcmMvY29tcG9uZW50cy9OYXZpZ2F0aW9uL1NpZGVNZW51LnZ1ZSIsIndlYnBhY2s6Ly9pbmZpbml0eS12dWUvLi9zcmMvbGF5b3V0L01lbnVMYXlvdXQudnVlIl0sInNvdXJjZXNDb250ZW50IjpbIlxyXG4jbG9nbyB7XHJcbiAgd2lkdGg6IDUwcHg7XHJcbn1cclxuIiwiXHJcbiNzaWRlLW1lbnUge1xyXG4gIHdpZHRoOiAzMDBweDtcclxuXHJcbiAgJi5oaWRkZW4ge1xyXG4gICAgd2lkdGg6IDUwcHg7XHJcbiAgfVxyXG5cclxuICAmLmludmlzaWJsZSB7XHJcbiAgICB3aWR0aDogMDtcclxuICB9XHJcbn1cclxuIiwiXHJcbiN2dWUtYXBwIHtcclxuICAjYXBwLW1haW4ge1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gIH1cclxufVxyXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/

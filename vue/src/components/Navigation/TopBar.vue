@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import logo from '../../assets/logo.svg'
-import {MDBNavbarBrand, MDBNavbar} from "mdb-vue-ui-kit";
+import {MDBNavbarBrand, MDBNavbar, MDBBtn} from "mdb-vue-ui-kit";
+import router from "../../router";
+import Logout from "../../requests/Logout";
+
+async function logout() {
+  await Logout();
+  await router.push({name: 'login'});
+}
 </script>
 
 <template>
@@ -8,7 +15,7 @@ import {MDBNavbarBrand, MDBNavbar} from "mdb-vue-ui-kit";
     <MDBNavbarBrand fluid=true>
       <img :src="logo" id="logo" alt="Vue logo" />
     </MDBNavbarBrand>
-    dddddddddd
+    <MDBBtn @click="logout" color="secondary">log out</MDBBtn>
   </MDBNavbar>
 </template>
 

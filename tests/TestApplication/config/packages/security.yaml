@@ -16,8 +16,10 @@ security:
             security: false
         main:
             pattern: ^/infinity/
-            lazy: true
             provider: app_user_provider
+            access_denied_url: /infinity
+            logout:
+                path: /infinity/logout
             json_login:
                 check_path: infinity.clear.login
 

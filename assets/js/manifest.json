@@ -2,10 +2,13 @@
   "assets/js/app.css": "/assets/js/app.css",
   "assets/js/app.js": "/assets/js/app.js",
   "assets/js/runtime.js": "/assets/js/runtime.js",
+  "assets/js/src_views_AccessControl_Login_vue.css": "/assets/js/src_views_AccessControl_Login_vue.css",
   "assets/js/src_views_AccessControl_Login_vue.js": "/assets/js/src_views_AccessControl_Login_vue.js",
-  "assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.css": "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.css",
-  "assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.js": "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.js",
+  "assets/js/src_views_Dashboard_vue.css": "/assets/js/src_views_Dashboard_vue.css",
+  "assets/js/src_views_Dashboard_vue.js": "/assets/js/src_views_Dashboard_vue.js",
+  "assets/js/vendors-node_modules_mdb-vue-ui-kit_js_mdb_es_min_js.js": "/assets/js/vendors-node_modules_mdb-vue-ui-kit_js_mdb_es_min_js.js",
+  "assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.css": "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.css",
+  "assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.js": "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.js",
   "assets/js/vendors-node_modules_lodash_lodash_js.js": "/assets/js/vendors-node_modules_lodash_lodash_js.js",
-  "assets/js/images/logo.svg": "/assets/js/images/logo.c0556501.svg",
-  "assets/js/src_views_Dashboard_vue.js": "/assets/js/src_views_Dashboard_vue.js"
+  "assets/js/images/logo.svg": "/assets/js/images/logo.c0556501.svg"
 }

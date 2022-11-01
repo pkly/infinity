@@ -2,9 +2,10 @@
 import LoginForm from "../../components/Form/LoginForm.vue";
 import router from "../../router";
 import {defineComponent} from "vue";
+import EmptyLayout from "../../layout/EmptyLayout.vue";
 
 export default defineComponent({
-  components: {LoginForm},
+  components: {EmptyLayout, LoginForm},
   methods: {
     onLogin() {
       router.push({name: 'dashboard'});
@@ -14,5 +15,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <LoginForm @login="onLogin" />
+  <EmptyLayout>
+    <LoginForm @login="onLogin" />
+  </EmptyLayout>
 </template>

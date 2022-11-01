@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import {UrlBase} from "../utils/Utils";
 
 const router = createRouter({
-  history: createWebHistory('infinity/'), // import.meta.env.BASE_URL ||
+  history: createWebHistory(UrlBase), // import.meta.env.BASE_URL ||
   routes: [
     {
       path: '/',

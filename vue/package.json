@@ -12,6 +12,7 @@
     "lint": "eslint infinity --ext .vue,.js,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "axios": "^1.1.3",
     "lodash": "^4.17.21",
     "mdb-vue-ui-kit": "^3.0.0",
     "pinia": "^2.0.21",

@@ -3,11 +3,11 @@
     "app": {
       "js": [
         "/assets/js/runtime.js",
-        "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.js",
+        "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.js",
         "/assets/js/app.js"
       ],
       "css": [
-        "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-8b6352.css",
+        "/assets/js/vendors-node_modules_mdb-vue-ui-kit_css_mdb_dark_min_css-node_modules_vue-loader_dist_exportH-76bab0.css",
         "/assets/js/app.css"
       ]
     }

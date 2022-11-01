@@ -23,3 +23,6 @@ Symfony.
 Currently in trial phase, no stability guarantees will be made.
 Only PHP8.1+ with newest Vue available and TypeScript.
 
+## Setup
+
+Install the bundle, then follow the instructions in [SETUP.md](SETUP.md)
