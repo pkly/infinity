@@ -16,6 +16,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
     .enableVersioning(Encore.isProduction())
+    .enableSassLoader()
 
     .enableVueLoader()
     .enableTypeScriptLoader(options => {

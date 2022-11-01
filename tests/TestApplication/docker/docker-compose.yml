@@ -12,7 +12,7 @@ services:
     volumes:
       - ./docker/db/data:/var/lib/postgresql/data:rw
     ports:
-      - "5432"
+      - "5432:5432"
 
   php_fpm:
     container_name: infinity_dev_php_fpm

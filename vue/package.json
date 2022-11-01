@@ -12,14 +12,16 @@
     "lint": "eslint infinity --ext .vue,.js,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
+    "mdb-vue-ui-kit": "^3.0.0",
     "pinia": "^2.0.21",
     "vue": "^3.2.38",
-    "vue-router": "^4.1.5",
-    "mdb-vue-ui-kit": "^3.0.0"
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
-    "@symfony/webpack-encore": "^4.1.1",
     "@rushstack/eslint-patch": "^1.1.4",
+    "@symfony/webpack-encore": "^4.1.1",
+    "@types/lodash": "^4.14.187",
     "@types/node": "^16.11.56",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-prettier": "^7.0.0",
@@ -29,10 +31,12 @@
     "eslint-plugin-vue": "^9.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "ts-loader": "^9.0.0",
     "typescript": "~4.7.4",
     "vite": "^3.0.9",
-    "vue-tsc": "^0.40.7",
     "vue-loader": "^17.0.0",
-    "ts-loader": "^9.0.0"
+    "vue-tsc": "^0.40.7"
   }
 }
