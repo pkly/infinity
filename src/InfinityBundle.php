@@ -10,7 +10,9 @@ class InfinityBundle extends Bundle
     {
         if (null === $this->path) {
             $reflected = new \ReflectionObject($this);
-            $this->path = \dirname($reflected->getFileName(), 2); // modern bundle type
+            /** @var string $filename */
+            $filename = $reflected->getFileName();
+            $this->path = \dirname($filename, 2); // modern bundle type
         }
 
         return $this->path;

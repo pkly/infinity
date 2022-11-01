@@ -48,7 +48,7 @@ jobs:
 
       - name: PHPStan
         run: |
-          vendor/bin/phpstan --ansi
+          vendor/bin/phpstan --ansi --no-progress
 
   php-cs-fixer:
     runs-on: ubuntu-latest
