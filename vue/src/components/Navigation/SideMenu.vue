@@ -1,11 +1,29 @@
+<script setup lang="ts">
+import Menu from "../../requests/Api/Menu";
+import {reactive} from "vue";
+
+const state = reactive({
+  resources: null as string[]|null,
+});
+
+Menu().then((data) => {
+  // @ts-ignore
+  state.resources = data.resources;
+});
+</script>
+
 <template>
   <div id="side-menu">
-    Side menu here
+    <div v-if="state.resources === null">
+      Loading
+    </div>
+    <div v-else>
+      <div v-for="resource in state.resources">
+        Resource: {{ resource }}
+      </div>
+    </div>
   </div>
 </template>
-
-<script setup lang="ts">
-</script>
 
 <style lang="scss">
 #side-menu {

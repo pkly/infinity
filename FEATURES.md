@@ -34,7 +34,7 @@ panel for Symfony.
   - [ ] User information
   - [ ] User notifications
   - [ ] Application notifications
-  - [ ] Menu information
+  - [x] Menu information
   - [ ] List of dashboards (later stages)?
   - [ ] Refresh notifications when applicable
 
@@ -60,4 +60,7 @@ panel for Symfony.
 - [x] Startup point
 - [x] Login logic
 - [x] Logout logic
-- [ ] ???
+- [ ] Side menu logic
+  - [ ] Loading information
+  - [ ] Display / interaction
+  - [ ] Reloading if needed

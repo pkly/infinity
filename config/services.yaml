@@ -1,7 +1,21 @@
 services:
-  Infinity\Controller\:
-    resource: '../src/Controller/'
+  _defaults:
     autowire: true
     autoconfigure: true
+
+  Infinity\:
+    resource: '../src/'
+    exclude:
+      - '../src/DependencyInjection/'
+      - '../src/Enum/'
+      - '../src/Interfaces/'
+      - '../src/Traits/'
+      - '../src/InfinityBundle.php'
+
+  Infinity\Controller\:
+    resource: '../src/Controller/'
     tags:
       - 'controller.service_arguments'
+
+  Infinity\Interfaces\ResourceServiceInterface:
+    alias: Infinity\Service\ResourceService

@@ -2,7 +2,8 @@
 import logo from '../../assets/logo.svg'
 import {MDBNavbarBrand, MDBNavbar, MDBBtn} from "mdb-vue-ui-kit";
 import router from "../../router";
-import Logout from "../../requests/Logout";
+import Logout from "../../requests/AccessControl/Logout";
+import {UserStore} from "../../stores/user";
 
 async function logout() {
   await Logout();
@@ -15,6 +16,9 @@ async function logout() {
     <MDBNavbarBrand fluid=true>
       <img :src="logo" id="logo" alt="Vue logo" />
     </MDBNavbarBrand>
+    <div class="ms-auto me-2">
+      {{ UserStore().identifier }}
+    </div>
     <MDBBtn @click="logout" color="secondary">log out</MDBBtn>
   </MDBNavbar>
 </template>

@@ -1,17 +1,11 @@
-<script lang="ts">
+<script setup lang="ts">
 import LoginForm from "../../components/Form/LoginForm.vue";
 import router from "../../router";
-import {defineComponent} from "vue";
 import EmptyLayout from "../../layout/EmptyLayout.vue";
 
-export default defineComponent({
-  components: {EmptyLayout, LoginForm},
-  methods: {
-    onLogin() {
-      router.push({name: 'dashboard'});
-    }
-  }
-});
+function onLogin() {
+  router.push({name: 'dashboard'});
+}
 </script>
 
 <template>

@@ -9,4 +9,8 @@ namespace Infinity\Interfaces\Mapping;
  */
 interface ResourceMapInterface
 {
+    /**
+     * @return class-string<T>
+     */
+    public function getEntityClass(): string;
 }
