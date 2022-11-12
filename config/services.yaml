@@ -8,6 +8,7 @@ services:
     exclude:
       - '../src/DependencyInjection/'
       - '../src/Enum/'
+      - '../src/Exception/'
       - '../src/Interfaces/'
       - '../src/Traits/'
       - '../src/InfinityBundle.php'
