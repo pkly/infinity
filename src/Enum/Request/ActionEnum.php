@@ -1,6 +1,6 @@
 <?php
 
-namespace Infinity\Enum;
+namespace Infinity\Enum\Request;
 
 enum ActionEnum: string
 {
