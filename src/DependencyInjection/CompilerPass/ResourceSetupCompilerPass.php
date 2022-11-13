@@ -2,6 +2,7 @@
 
 namespace Infinity\DependencyInjection\CompilerPass;
 
+use Infinity\Attribute\Resource;
 use Infinity\InfinityBundle;
 use Infinity\Service\ResourceService;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
@@ -21,7 +22,19 @@ class ResourceSetupCompilerPass implements CompilerPassInterface
         $map = [];
 
         foreach ($container->findTaggedServiceIds(InfinityBundle::TAG_RESOURCE_MAP) as $id => $tags) {
-            $map[$id] = new Reference($id); // for the time being do not map entity class -> resource
+            $service = $container->getDefinition($id);
+
+            // todo: add missing attribute crash
+            /** @var Resource $attribute */
+            $attribute = (new \ReflectionClass($service->getClass()))->getAttributes(Resource::class)[0]->newInstance();
+
+            if (!array_key_exists($attribute->class, $map)) {
+                $map[$attribute->class] = [];
+            }
+
+            $map[$attribute->class][] = [
+                $id => new Reference($id),
+            ];
         }
 
         $definition->setArgument(0, $map);

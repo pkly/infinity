@@ -4,6 +4,7 @@ namespace Infinity\DependencyInjection;
 
 use Infinity\InfinityBundle;
 use Infinity\Interfaces\Mapping\ResourceMapInterface;
+use Infinity\Interfaces\Tool\ToolInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -26,5 +27,8 @@ class InfinityExtension extends Extension
 
         $container->registerForAutoconfiguration(ResourceMapInterface::class)
             ->addTag(InfinityBundle::TAG_RESOURCE_MAP);
+
+        $container->registerForAutoconfiguration(ToolInterface::class)
+            ->addTag(InfinityBundle::TAG_TOOL);
     }
 }

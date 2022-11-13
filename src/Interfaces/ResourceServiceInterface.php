@@ -18,7 +18,9 @@ interface ResourceServiceInterface
     ): ResourceMapInterface;
 
     /**
-     * @return iterable<ResourceMapInterface>
+     * Where key is the entity class and value is an array of id -> ResourceMapInterface
+     *
+     * @return iterable<class-string, iterable<string, ResourceMapInterface>>
      */
     public function getResources(): iterable;
 }

@@ -6,6 +6,7 @@ services:
   Infinity\:
     resource: '../src/'
     exclude:
+      - '../src/Attribute/'
       - '../src/DependencyInjection/'
       - '../src/Enum/'
       - '../src/Exception/'

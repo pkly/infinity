@@ -5,20 +5,17 @@ namespace Infinity\Service;
 use Infinity\Enum\Request\ActionEnum;
 use Infinity\Enum\Request\TypeEnum;
 use Infinity\Interfaces\ResourceServiceInterface;
+use Infinity\Interfaces\ToolServiceInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 class ApiService
 {
-    private ContextService $contextService;
-    private ResourceServiceInterface $resourceService;
-
     public function __construct(
-        ContextService $contextService,
-        ResourceServiceInterface $resourceService,
+        private readonly ContextService $contextService,
+        private readonly ResourceServiceInterface $resourceService,
+        private readonly ToolServiceInterface $toolService
     ) {
-        $this->contextService = $contextService;
-        $this->resourceService = $resourceService;
     }
 
     public function handle(
@@ -31,13 +28,10 @@ class ApiService
             $fn = $this->contextService->getCustomAction();
         }
 
-        if (TypeEnum::Resource === $this->contextService->getType()) {
-            try {
-                return $this->resourceService->{$fn}(...$data);
-            } catch (\Throwable $e) {
-                dump($e);
-                return null;
-            }
+        if (TypeEnum::Tool === $this->contextService->getType()) {
+            return $this->toolService->getTool(
+                $this->contextService->getTarget()
+            )->{$fn}(...$data);
         }
 
         return null;
