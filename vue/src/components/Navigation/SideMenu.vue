@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Menu from "../../requests/Api/Menu";
+import Menu from "../../requests/Tools/Menu";
 import {reactive} from "vue";
 
 const state = reactive({

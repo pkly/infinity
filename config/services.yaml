@@ -21,3 +21,6 @@ services:
 
   Infinity\Interfaces\ResourceServiceInterface:
     alias: Infinity\Service\ResourceService
+
+  Infinity\Interfaces\ToolServiceInterface:
+    alias: Infinity\Service\ToolService

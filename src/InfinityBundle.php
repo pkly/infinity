@@ -3,6 +3,7 @@
 namespace Infinity;
 
 use Infinity\DependencyInjection\CompilerPass\ResourceSetupCompilerPass;
+use Infinity\DependencyInjection\CompilerPass\ToolSetupCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -15,6 +16,7 @@ class InfinityBundle extends Bundle
         ContainerBuilder $container
     ): void {
         $container->addCompilerPass(new ResourceSetupCompilerPass());
+        $container->addCompilerPass(new ToolSetupCompilerPass());
     }
 
     public function getPath(): string

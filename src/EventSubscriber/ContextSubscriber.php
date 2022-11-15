@@ -23,7 +23,7 @@ class ContextSubscriber implements EventSubscriberInterface
     public function onRequest(
         RequestEvent $event
     ): void {
-        if (!$event->isMainRequest()) {
+        if (!$event->isMainRequest() || 'infinity.api' !== $event->getRequest()->attributes->get('_route')) {
             return;
         }
 

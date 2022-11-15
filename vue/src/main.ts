@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 import 'mdb-vue-ui-kit/css/mdb.dark.min.css';
-import GetUser from "./requests/AccessControl/GetUser";
+import GetUser from "./requests/Tools/User";
 
 const app = createApp(App);
 
