@@ -2,13 +2,13 @@
 
 namespace Infinity\Service;
 
-use Infinity\Interfaces\Mapping\ResourceMapInterface;
+use Infinity\Interfaces\Mapping\ResourceInterface;
 use Infinity\Interfaces\ResourceServiceInterface;
 
 class ResourceService implements ResourceServiceInterface
 {
     /**
-     * @param array<class-string, array<string, ResourceMapInterface>> $resources
+     * @param array<class-string, array<string, ResourceInterface>> $resources
      */
     public function __construct(
         private readonly array $resources = []
@@ -17,7 +17,7 @@ class ResourceService implements ResourceServiceInterface
 
     public function getResource(
         string $class
-    ): ResourceMapInterface {
+    ): ResourceInterface {
         // TODO: Implement getResource() method.
     }
 

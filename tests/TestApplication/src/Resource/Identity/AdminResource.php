@@ -4,14 +4,14 @@ namespace Test\Infinity\TestApplication\Resource\Identity;
 
 use Infinity\Attribute\Resource;
 use Infinity\Service\Mapping\Field\TextFieldMap;
-use Infinity\Service\Mapping\Resource\AbstractResourceMap;
+use Infinity\Service\Mapping\Resource\AbstractResource;
 use Test\Infinity\TestApplication\Entity\Identity\Admin;
 
 /**
- * @extends AbstractResourceMap<Admin>
+ * @extends AbstractResource<Admin>
  */
 #[Resource(Admin::class)]
-class AdminResource extends AbstractResourceMap
+class AdminResource extends AbstractResource
 {
     public function __construct()
     {

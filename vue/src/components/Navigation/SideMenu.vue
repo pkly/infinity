@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Menu from "../../requests/Tools/Menu";
 import {reactive} from "vue";
+import {RouterLink} from "vue-router";
 
 const state = reactive({
   resources: null as string[]|null,
@@ -18,8 +19,13 @@ Menu().then((data) => {
       Loading
     </div>
     <div v-else>
+      <RouterLink :to="{name: 'dashboard'}">
+        Dashboard
+      </RouterLink>
       <div v-for="resource in state.resources">
-        Resource: {{ resource }}
+        <RouterLink :to="{name: 'resource-index', query: {target: resource.class}}">
+          {{ resource.label }}
+        </RouterLink>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class InfinityBundle extends Bundle
 {
-    public const TAG_RESOURCE_MAP = 'infinity.resource_map';
+    public const TAG_RESOURCE = 'infinity.resource';
     public const TAG_TOOL = 'infinity.tool';
 
     public function build(

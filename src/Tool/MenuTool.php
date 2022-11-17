@@ -21,14 +21,20 @@ class MenuTool implements ToolInterface, IndexInterface
     public function index(
         Request $request
     ): JsonResponse {
-        $resources = [];
+        $map = [];
 
-        foreach ($this->resourceService->getResources() as $class => $arr) {
-            $resources[] = $class;
+        foreach ($this->resourceService->getResources() as $class => $resources) {
+            foreach ($resources as $id => $interface) {
+                $map[] = [
+                    'entity' => $class,
+                    'class' => $id,
+                    'label' => $interface->getTitle(),
+                ];
+            }
         }
 
         return $this->json([
-            'resources' => $resources,
+            'resources' => $map,
         ]);
     }
 }

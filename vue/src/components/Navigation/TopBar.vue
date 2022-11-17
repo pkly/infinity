@@ -5,6 +5,8 @@ import router from "../../router";
 import Logout from "../../requests/AccessControl/Logout";
 import {UserStore} from "../../stores/user";
 
+const store = UserStore();
+
 async function logout() {
   await Logout();
   await router.push({name: 'login'});
@@ -17,7 +19,7 @@ async function logout() {
       <img :src="logo" id="logo" alt="Vue logo" />
     </MDBNavbarBrand>
     <div class="ms-auto me-2">
-      {{ UserStore().identifier }}
+      {{ store.identifier }}
     </div>
     <MDBBtn @click="logout" color="secondary">log out</MDBBtn>
   </MDBNavbar>

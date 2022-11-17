@@ -21,7 +21,7 @@ class ResourceSetupCompilerPass implements CompilerPassInterface
         $definition = $container->getDefinition(ResourceService::class);
         $map = [];
 
-        foreach ($container->findTaggedServiceIds(InfinityBundle::TAG_RESOURCE_MAP) as $id => $tags) {
+        foreach ($container->findTaggedServiceIds(InfinityBundle::TAG_RESOURCE) as $id => $tags) {
             $service = $container->getDefinition($id);
 
             // todo: add missing attribute crash
@@ -32,9 +32,7 @@ class ResourceSetupCompilerPass implements CompilerPassInterface
                 $map[$attribute->class] = [];
             }
 
-            $map[$attribute->class][] = [
-                $id => new Reference($id),
-            ];
+            $map[$attribute->class][$id] = new Reference($id);
         }
 
         $definition->setArgument(0, $map);

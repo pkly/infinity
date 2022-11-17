@@ -3,13 +3,13 @@
 namespace Infinity\Service\Mapping\Resource;
 
 use Infinity\Interfaces\Mapping\FieldMapInterface;
-use Infinity\Interfaces\Mapping\ResourceMapInterface;
+use Infinity\Interfaces\Mapping\ResourceInterface;
 
 /**
  * @template T of object
- * @implements ResourceMapInterface<T>
+ * @implements ResourceInterface<T>
  */
-abstract class AbstractResourceMap implements ResourceMapInterface
+abstract class AbstractResource implements ResourceInterface
 {
     /**
      * @var class-string<T>
@@ -31,6 +31,19 @@ abstract class AbstractResourceMap implements ResourceMapInterface
     public function getEntityClass(): string
     {
         return $this->entityClass;
+    }
+
+    public function getTitle(
+        ?object $entity = null
+    ): string {
+        $exploded = explode('\\', $this->entityClass);
+        $label = end($exploded);
+
+        if (null !== $entity) {
+            $label .= ' - placeholder';
+        }
+
+        return $label;
     }
 
     /**

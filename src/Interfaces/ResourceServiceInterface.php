@@ -2,25 +2,25 @@
 
 namespace Infinity\Interfaces;
 
-use Infinity\Interfaces\Mapping\ResourceMapInterface;
+use Infinity\Interfaces\Mapping\ResourceInterface;
 
 interface ResourceServiceInterface
 {
     /**
      * @param class-string $class
      *
-     * @return ResourceMapInterface
+     * @return ResourceInterface
      *
      * @todo: throws etc.
      */
     public function getResource(
         string $class
-    ): ResourceMapInterface;
+    ): ResourceInterface;
 
     /**
      * Where key is the entity class and value is an array of id -> ResourceMapInterface
      *
-     * @return iterable<class-string, iterable<string, ResourceMapInterface>>
+     * @return iterable<class-string, iterable<string, ResourceInterface>>
      */
     public function getResources(): iterable;
 }

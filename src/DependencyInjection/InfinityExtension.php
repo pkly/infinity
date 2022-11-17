@@ -3,7 +3,7 @@
 namespace Infinity\DependencyInjection;
 
 use Infinity\InfinityBundle;
-use Infinity\Interfaces\Mapping\ResourceMapInterface;
+use Infinity\Interfaces\Mapping\ResourceInterface;
 use Infinity\Interfaces\Tool\ToolInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -25,8 +25,8 @@ class InfinityExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
         $loader->load('services.yaml');
 
-        $container->registerForAutoconfiguration(ResourceMapInterface::class)
-            ->addTag(InfinityBundle::TAG_RESOURCE_MAP);
+        $container->registerForAutoconfiguration(ResourceInterface::class)
+            ->addTag(InfinityBundle::TAG_RESOURCE);
 
         $container->registerForAutoconfiguration(ToolInterface::class)
             ->addTag(InfinityBundle::TAG_TOOL);
