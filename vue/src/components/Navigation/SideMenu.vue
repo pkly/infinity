@@ -1,28 +1,21 @@
 <script setup lang="ts">
-import Menu from "../../requests/Tools/Menu";
-import {reactive} from "vue";
 import {RouterLink} from "vue-router";
+import {MenuStore} from "../../stores/menu";
 
-const state = reactive({
-  resources: null as string[]|null,
-});
-
-Menu().then((data) => {
-  // @ts-ignore
-  state.resources = data.resources;
-});
+const store = MenuStore();
+store.load();
 </script>
 
 <template>
   <div id="side-menu">
-    <div v-if="state.resources === null">
+    <div v-if="!store.loaded">
       Loading
     </div>
     <div v-else>
       <RouterLink :to="{name: 'dashboard'}">
         Dashboard
       </RouterLink>
-      <div v-for="resource in state.resources">
+      <div v-for="resource in store.resources">
         <RouterLink :to="{name: 'resource-index', query: {target: resource.class}}">
           {{ resource.label }}
         </RouterLink>

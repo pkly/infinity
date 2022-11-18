@@ -11,7 +11,7 @@ export const UserStore = defineStore('user', {
     actions: {
         set(login: object) {
             // @ts-ignore
-            this.identifier = login.identifier;
+            this.identifier = login.user.identifier;
         },
         async isAuthenticated(attemptCheck: boolean = false): Promise<boolean> {
             if (attemptCheck && null === this.identifier) {
