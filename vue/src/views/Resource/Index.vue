@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import MenuLayout from "../../layout/MenuLayout.vue"
+import MainLayout from "../../layout/MainLayout.vue"
 </script>
 
 <template>
-  <MenuLayout>
+  <MainLayout>
     <div>
       Index view!
     </div>
-  </MenuLayout>
+  </MainLayout>
 </template>

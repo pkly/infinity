@@ -7,21 +7,21 @@ store.load();
 </script>
 
 <template>
-  <div id="side-menu">
-    <div v-if="!store.loaded">
-      Loading
-    </div>
-    <div v-else>
-      <RouterLink :to="{name: 'dashboard'}">
-        Dashboard
-      </RouterLink>
-      <div v-for="resource in store.resources">
-        <RouterLink :to="{name: 'resource-index', query: {target: resource.class}}">
-          {{ resource.label }}
-        </RouterLink>
-      </div>
-    </div>
-  </div>
+    <v-navigation-drawer permanent>
+        <div v-if="!store.loaded">
+            Loading...
+        </div>
+        <div v-else>
+            <v-list density="compact" nav>
+                <RouterLink :to="{name: 'dashboard'}">
+                <v-list-item prepend-icon="mdi-folder" title="Dashboard" />
+                </RouterLink>
+                <RouterLink v-for="resource in store.resources" :to="{name: 'resource-index', query: {target: resource.class}}">
+                    <v-list-item title="resource.label" />
+                </RouterLink>
+            </v-list>
+        </div>
+    </v-navigation-drawer>
 </template>
 
 <style lang="scss">

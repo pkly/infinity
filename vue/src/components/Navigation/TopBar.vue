@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import logo from '../../assets/logo.svg'
-import {MDBNavbarBrand, MDBNavbar, MDBBtn} from "mdb-vue-ui-kit";
 import router from "../../router";
 import Logout from "../../requests/AccessControl/Logout";
 import {UserStore} from "../../stores/user";
 
 const store = UserStore();
+
+const emit = defineEmits<{
+    (e: 'toggle'): void
+}>();
 
 async function logout() {
   await Logout();
@@ -14,19 +16,34 @@ async function logout() {
 </script>
 
 <template>
-  <MDBNavbar class="mb-5" dark bg="dark" container>
-    <MDBNavbarBrand fluid=true>
-      <img :src="logo" id="logo" alt="Vue logo" />
-    </MDBNavbarBrand>
-    <div class="ms-auto me-2">
-      {{ store.identifier }}
-    </div>
-    <MDBBtn @click="logout" color="secondary">log out</MDBBtn>
-  </MDBNavbar>
-</template>
+    <v-app-bar>
+        <v-app-bar-nav-icon @click="emit('toggle')" />
+        <v-toolbar-title>Application</v-toolbar-title>
 
-<style lang="scss">
-#logo {
-  width: 50px;
-}
-</style>
+        <v-spacer />
+
+        <v-list v-if="store.isAuthenticated()">
+            <v-list-item
+                prepend-avatar="https://cdn.vuetifyjs.com/images/john.png"
+                title="Admin"
+                :subtitle="store.identifier"
+            />
+        </v-list>
+
+        <template v-slot:append>
+            <v-menu>
+                <template v-slot:activator="{props}">
+                    <v-btn icon v-bind="props">
+                        <v-icon>mdi-dots-vertical</v-icon>
+                    </v-btn>
+                </template>
+
+                <v-list>
+                    <v-list-item>
+                        <v-list-item-title @click="logout">Logout</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+        </template>
+    </v-app-bar>
+</template>

@@ -11,3 +11,5 @@ $DIR/../bin/console doctrine:schema:create
 $DIR/../bin/console doctrine:fixtures:load --no-interaction
 
 chown -R 777 $DIR/../var/cache
+
+ln -s /var/www/assets /var/www/tests/TestApplication/public/assets
