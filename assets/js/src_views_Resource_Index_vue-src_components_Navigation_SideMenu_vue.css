@@ -1,0 +1,14 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-13.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/resolve-url-loader/index.js??clonedRuleSet-13.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-13.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Navigation/SideMenu.vue?vue&type=style&index=0&id=26411a91&lang=scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+#side-menu {
+  width: 300px;
+}
+#side-menu.hidden {
+  width: 50px;
+}
+#side-menu.invisible {
+  width: 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3JjX3ZpZXdzX1Jlc291cmNlX0luZGV4X3Z1ZS1zcmNfY29tcG9uZW50c19OYXZpZ2F0aW9uX1NpZGVNZW51X3Z1ZS5jc3MiLCJtYXBwaW5ncyI6Ijs7O0FBQ0E7RUFDRTtBQUFGO0FBRUU7RUFDRTtBQUFKO0FBR0U7RUFDRTtBQURKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9pbmZpbml0eS12dWUvLi9zcmMvY29tcG9uZW50cy9OYXZpZ2F0aW9uL1NpZGVNZW51LnZ1ZSJdLCJzb3VyY2VzQ29udGVudCI6WyJcbiNzaWRlLW1lbnUge1xuICB3aWR0aDogMzAwcHg7XG5cbiAgJi5oaWRkZW4ge1xuICAgIHdpZHRoOiA1MHB4O1xuICB9XG5cbiAgJi5pbnZpc2libGUge1xuICAgIHdpZHRoOiAwO1xuICB9XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/

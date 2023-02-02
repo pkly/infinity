@@ -24,7 +24,7 @@ async function logout() {
 
         <v-list v-if="store.isAuthenticated()">
             <v-list-item
-                prepend-avatar="https://cdn.vuetifyjs.com/images/john.png"
+                prepend-avatar=""
                 title="Admin"
                 :subtitle="store.identifier"
             />
