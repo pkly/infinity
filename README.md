@@ -37,7 +37,7 @@ To get a working setup follow these steps
 4. Open a second terminal and open `./scripts/docker-shell.sh` from the same directory
 5. Run `composer install` inside of the shell
 6. Run `cd tests/TestApplication` and then `./scripts/wipe-install.sh`, this will ensure you can log into the test application
-7. The application is running by default under `localhost` and login information is `super@infinity.com` and `password`
+7. The application is running by default under `http://localhost/infinity` and login information is `super@infinity.com` and `password`
 
 ### Vue
 

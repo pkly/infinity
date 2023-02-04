@@ -1,6 +1,6 @@
 <?php
 
-namespace Infinity\Exception\Tool;
+namespace Infinity\Exception\Resource;
 
 class NotFoundException extends \Exception
 {
