@@ -1,7 +1,7 @@
 enum TypeEnum {
-    Resource = 'resource',
-    Tool = 'tool',
-    ResourceTool = 'resourceTool',
+    Resource = "resource",
+    Tool = "tool",
+    ResourceTool = "resourceTool",
 }
 
-export default TypeEnum;
+export default TypeEnum
