@@ -10,10 +10,12 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint infinity --ext .vue,.js,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write",
+    "typecheck": "tsc --noEmit --pretty -p tsconfig.json",
     "prepare": "cd .. && husky install vue/.husky"
   },
   "lint-staged": {
-    "./vue/*.{vue|js|cjs|mjs|ts|tsx|cts|mts|s?css|json|md|mdx}": "npm run lint"
+    "*.vue|js|cjs|mjs|ts|tsx|cts|mts|s?css|json|md|mdx": "eslint --cache --fix && prettier --write"
   },
   "dependencies": {
     "axios": "^1.1.3",
