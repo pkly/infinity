@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from "vue-router"
-import { UrlBase } from "../utils/Utils"
-import { UserStore } from "../stores/user"
+import { createRouter, createWebHistory } from "vue-router";
+import { UrlBase } from "../utils/Utils";
+import { UserStore } from "../stores/user";
 
 const router = createRouter({
     history: createWebHistory(UrlBase), // import.meta.env.BASE_URL ||
@@ -21,16 +21,16 @@ const router = createRouter({
             component: () => import("../views/Resource/Index.vue"),
         },
     ],
-})
+});
 
 router.beforeEach(async (to, from, next) => {
-    const store = UserStore()
+    const store = UserStore();
 
     if (to.name !== "login" && !(await store.isAuthenticated(true))) {
-        next({ name: "login" })
+        next({ name: "login" });
     } else {
-        next()
+        next();
     }
-})
+});
 
-export default router
+export default router;

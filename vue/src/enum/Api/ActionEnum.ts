@@ -7,4 +7,4 @@ enum ActionEnum {
     Custom = "custom",
 }
 
-export default ActionEnum
+export default ActionEnum;

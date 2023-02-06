@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import router from "../../router"
-import Logout from "../../requests/AccessControl/Logout"
-import { UserStore } from "../../stores/user"
+import router from "../../router";
+import Logout from "../../requests/AccessControl/Logout";
+import { UserStore } from "../../stores/user";
 
-const store = UserStore()
+const store = UserStore();
 
 const emit = defineEmits<{
-    (e: "toggle"): void
-}>()
+    (e: "toggle"): void;
+}>();
 
 async function logout() {
-    await Logout()
-    await router.push({ name: "login" })
+    await Logout();
+    await router.push({ name: "login" });
 }
 </script>
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { reactive } from "vue"
-import TopBar from "../components/Navigation/TopBar.vue"
-import SideMenu from "../components/Navigation/SideMenu.vue"
+import { reactive } from "vue";
+import TopBar from "../components/Navigation/TopBar.vue";
+import SideMenu from "../components/Navigation/SideMenu.vue";
 
 let state = reactive({
     drawer: false,
-})
+});
 </script>
 
 <template>

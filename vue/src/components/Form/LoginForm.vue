@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { reactive } from "vue"
-import Login from "../../requests/AccessControl/Login"
+import { reactive } from "vue";
+import Login from "../../requests/AccessControl/Login";
 
 const state = reactive({
     username: "",
     password: "",
-})
+});
 const emit = defineEmits<{
-    (e: "login"): void
-}>()
+    (e: "login"): void;
+}>();
 
 async function submit() {
     if (await Login(state.username, state.password)) {
-        emit("login")
+        emit("login");
     }
 }
 </script>

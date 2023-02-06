@@ -4,4 +4,4 @@ enum TypeEnum {
     ResourceTool = "resourceTool",
 }
 
-export default TypeEnum
+export default TypeEnum;

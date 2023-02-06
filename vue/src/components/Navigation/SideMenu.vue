@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { RouterLink } from "vue-router"
-import { MenuStore } from "../../stores/menu"
+import { RouterLink } from "vue-router";
+import { MenuStore } from "../../stores/menu";
 
-const store = MenuStore()
-store.load()
+const store = MenuStore();
+store.load();
 </script>
 
 <template>
