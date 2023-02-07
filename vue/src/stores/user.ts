@@ -1,10 +1,10 @@
-import {defineStore} from 'pinia'
+import { defineStore } from "pinia";
 import User from "../requests/Tools/User";
 
-export const UserStore = defineStore('user', {
+export const UserStore = defineStore("user", {
     state: () => {
         return {
-            identifier: null as string|null,
+            identifier: null as string | null,
             roles: [] as string[],
         };
     },
@@ -22,7 +22,7 @@ export const UserStore = defineStore('user', {
                 }
             }
 
-            return null !== this.identifier
-        }
-    }
+            return null !== this.identifier;
+        },
+    },
 });

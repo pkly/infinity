@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import router from "../../router";
 import Logout from "../../requests/AccessControl/Logout";
-import {UserStore} from "../../stores/user";
+import { UserStore } from "../../stores/user";
 
 const store = UserStore();
 
 const emit = defineEmits<{
-    (e: 'toggle'): void
+    (e: "toggle"): void;
 }>();
 
 async function logout() {
-  await Logout();
-  await router.push({name: 'login'});
+    await Logout();
+    await router.push({ name: "login" });
 }
 </script>
 
@@ -23,16 +23,12 @@ async function logout() {
         <v-spacer />
 
         <v-list v-if="store.isAuthenticated()">
-            <v-list-item
-                prepend-avatar=""
-                title="Admin"
-                :subtitle="store.identifier"
-            />
+            <v-list-item prepend-avatar="" title="Admin" :subtitle="store.identifier" />
         </v-list>
 
         <template v-slot:append>
             <v-menu>
-                <template v-slot:activator="{props}">
+                <template v-slot:activator="{ props }">
                     <v-btn icon v-bind="props">
                         <v-icon>mdi-dots-vertical</v-icon>
                     </v-btn>

@@ -1,16 +1,10 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
-  "files": [
-    "shims.d.ts"
-  ],
-  "include": [
-    "env.d.ts",
-    "src/**/*",
-    "src/**/*.vue"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.config.json"
-    }
-  ]
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "files": ["shims.d.ts"],
+    "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+    "references": [
+        {
+            "path": "./tsconfig.config.json"
+        }
+    ]
 }

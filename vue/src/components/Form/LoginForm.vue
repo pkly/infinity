@@ -1,21 +1,20 @@
 <script setup lang="ts">
-import {reactive} from "vue";
+import { reactive } from "vue";
 import Login from "../../requests/AccessControl/Login";
 
 const state = reactive({
-    username: '',
-    password: ''
+    username: "",
+    password: "",
 });
 const emit = defineEmits<{
-    (e: 'login'): void
+    (e: "login"): void;
 }>();
 
 async function submit() {
     if (await Login(state.username, state.password)) {
-        emit('login');
+        emit("login");
     }
 }
-
 </script>
 
 <template>
@@ -23,9 +22,7 @@ async function submit() {
         <h1 class="mb-5">Hello. Log in to continue.</h1>
         <v-text-field v-model="state.username" label="Username" required />
         <v-text-field v-model="state.password" label="Password" required />
-        <v-btn :onclick="submit">
-            Submit
-        </v-btn>
+        <v-btn :onclick="submit"> Submit </v-btn>
     </v-form>
 </template>
 

@@ -1,11 +1,11 @@
-import {defineStore} from 'pinia'
+import { defineStore } from "pinia";
 import Menu from "../requests/Tools/Menu";
 
-export const MenuStore = defineStore('menu', {
+export const MenuStore = defineStore("menu", {
     state: () => {
         return {
             loaded: false,
-            resources: [] as object[]
+            resources: [] as Record<string, any>[],
         };
     },
     actions: {
@@ -23,6 +23,6 @@ export const MenuStore = defineStore('menu', {
             }
 
             return null !== data;
-        }
-    }
+        },
+    },
 });

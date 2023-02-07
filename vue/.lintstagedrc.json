@@ -1,0 +1,6 @@
+{
+    "*.vue|js|cjs|mjs|ts|tsx|cts|mts|s?css|json|md|mdx": [
+        "eslint --cache --fix",
+        "prettier --write --config .prettierrc.json"
+    ]
+}
