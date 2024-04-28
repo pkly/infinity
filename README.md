@@ -1,6 +1,8 @@
 # Infinity
 Experimental Symfony CRUD using Vue and power of Symfony 5+
 
+# Moving to ORG under https://github.com/InfinityAdminOrg
+
 ## Why?
 Because EasyAdmin annoys me sometimes.
 
